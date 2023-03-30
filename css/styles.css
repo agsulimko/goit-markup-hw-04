@@ -329,7 +329,6 @@ background-color: var(--color-IRIS);
 display: flex;
 justify-content: center;
 align-items: center ;
-
 }
 
 .team-soc-icon{
@@ -350,36 +349,32 @@ align-items: center ;
  
  }
 .customers-logo{
-    border: 1px solid var(--color-SLATE);
-    border-radius: 4px;
- 
+   border: 1px solid var(--color-SLATE);
+   border-radius: 4px;
+   fill: 
+   #AFB1B8;
+   padding: 16px 32px;
+
 }
 
 .customers-list{
   display: flex;
   justify-content: center;
   gap: 24px;
-
 }
 
-.customers-link{
+/* .customers-link{
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
-  
-}
-.customers-logo:hover . {
+  align-items: center; 
+} */
+
+.customers-link:hover > .customers-logo{
   fill:var(--color-OCEAN);
+   border-color : var(--color-OCEAN);
 }
-
-
-/*  ***********test***************/
-
-
-
-/* *************test************** */
 
  /* -- Section 4 Customers -- */
 
@@ -389,7 +384,6 @@ align-items: center ;
 background-color: var(--color-background-hero);
 padding-top: 100px;
 padding-bottom: 100px;
-
 }
 
 .logo-studio-footer {
@@ -414,11 +408,11 @@ padding-bottom: 100px;
 
 .title-soc{
   font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color:var(--color-WHITE); 
-    margin-bottom: 16px;  
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color:var(--color-WHITE); 
+  margin-bottom: 16px;  
 }
 .footer>.container{
   display: flex; 
@@ -440,7 +434,7 @@ padding-bottom: 100px;
 }
 
 .footer-soc-link {
-   width: 100%;
+ width: 100%;
  height: 100%;
  border-radius: 50%;
 background-color: #434455;
@@ -455,16 +449,13 @@ align-items: center;
 
 .footer-soc-link:hover {
   background-color: #31D0AA;
-
 }
-
 /* ====================Footer=============*/
 /* =======================MAIN PAGE=========*/
-/* ===================================== */
-/* ====================================== */
-/* ===================================== */
-/* =========================PORTFOLIO=========== */
 
+
+
+/* =========================PORTFOLIO=========== */
 /* ===============Section 1  Filter========== */
 
 .filter{
@@ -501,8 +492,6 @@ align-items: center;
   background-color: #404BBF; 
   border-color: transparent;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-
-
 }
 /* ========Section 1  Filter======= */
 
