@@ -1,7 +1,7 @@
 :root {
   --color-IRIS: #4d5ae5;
   --color-NAVYBLU: #2e2f42;
-  --color-SLATE: #434455;
+  --color-SLATE:#434455;
   --color-Cloud: #f4f4fd;
   --color-WHITE: #ffffff;
   --color-OCEAN: #404bbf;
@@ -16,7 +16,7 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  color: var(--color-SLATE);
+  --color-NAVYBLU: #2e2f42;
   background-color:#ffffff;
   
 }
@@ -356,8 +356,7 @@ align-items: center ;
   padding-bottom: 120px;
  }
 .customers-logo{
-fill:var(--color-SLATE);
-align-items: center;
+fill:#8E8F99;;
 
 }
 
@@ -525,7 +524,8 @@ align-items: center;
 .project-link{
   display: flex;
   height: 100%;
-  flex-direction: column;border: 1px solid #E7E9FC;
+  flex-direction: column;
+  
 }
 
 .project-link > .images{ 
@@ -536,7 +536,6 @@ align-items: center;
 .project-link:hover,
 .project-link:focus
 {
-  border: 1px solid #F4F4FD;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 /* ========ROW 1-3================= */
