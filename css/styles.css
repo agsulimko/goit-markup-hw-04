@@ -99,6 +99,10 @@ color:var(--color-NAVYBLU);
   margin: 0 auto;
   padding-top: 24px;
   padding-bottom: 24px;
+  box-shadow: 0px 2px 1px
+   rgba(46, 47, 66, 0.08), 0px 1px 1px
+    rgba(46, 47, 66, 0.16), 0px 1px 6px
+     rgba(46, 47, 66, 0.08);
 }
 
 .header-nav {
@@ -182,7 +186,6 @@ color: var(--color-SLATE);
   url(../images/main_page/background/hero-bd.png);
   background-repeat: no-repeat;
   max-width: 1440px;
-  margin: 0 auto;
   background-position: center;
   background-size: cover;
   
@@ -212,6 +215,8 @@ color: var(--color-SLATE);
   cursor: pointer;
   border: 1px solid transparent ; 
   padding: 16px 32px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+ 
 }
 
 .hero-btn:hover,
@@ -249,6 +254,7 @@ padding-bottom: 120px;
   background-size: 60px 64px;
   background-color: var(--color-Cloud);
   background-position: 50% 50%;
+  margin-bottom: 8px;
 }
 .feature-item:nth-child(1):before {
 background-image: url(../images/icons/icon_antenna.svg);
@@ -335,7 +341,9 @@ align-items: center ;
   fill: var(--color-Cloud);
 }
 
-.team-soc-link:hover{
+.team-soc-link:hover,
+.team-soc-link:focus
+{
   background-color: var(--color-OCEAN);
 }
 
@@ -346,27 +354,40 @@ align-items: center ;
  .customers{
   padding-top: 120px;
   padding-bottom: 120px;
- 
  }
 .customers-logo{
-   border: 1px solid var(--color-SLATE);
-   border-radius: 4px;
-   fill:  #AFB1B8;
-   padding: 16px 32px;
+fill:var(--color-SLATE);
+align-items: center;
 
 }
 
 .customers-list{
-  display: flex;
-  justify-content: center;
-  gap: 24px;
+display: flex;
+justify-content: center;
+gap: 24px;
+
 }
 
-.customers-link:hover > .customers-logo{
+.customers-link{
+display: flex;
+border: 1px solid var(--color-SLATE);
+border-radius: 4px;
+width: 168px;
+height: 88px;
+justify-content: center;
+align-items: center;
+}
+
+.customers-link:hover > .customers-logo,
+.customers-link:focus > .customers-logo
+{ 
   fill:var(--color-OCEAN);
-  border-color : var(--color-OCEAN);
-}
+  }
 
+.customers-link:hover,
+.customers-link:focus{
+border-color : var(--color-OCEAN); 
+}
  /* -- Section 4 Customers -- */
 
 /* ==========Footer==========*/
@@ -438,7 +459,8 @@ align-items: center;
   fill: var(--color-Cloud); 
 }
 
-.footer-soc-link:hover {
+.footer-soc-link:hover,
+.footer-soc-link:focus {
   background-color: #31D0AA;
 }
 /* ====================Footer=============*/
@@ -498,19 +520,22 @@ align-items: center;
   border: 1px solid #E7E9FC;
   border-top: none;
   padding: 32px 16px;
-  max-width: 360px ;
   flex-grow: 1;
 }
 .project-link{
   display: flex;
   height: 100%;
-  flex-direction: column;
+  flex-direction: column;border: 1px solid #E7E9FC;
 }
 
-.project-item{
-  border: 1px solid #E7E9FC;
+.project-link > .images{ 
 }
-.project-item:hover{
+.project-item{
+  
+}
+.project-link:hover,
+.project-link:focus
+{
   border: 1px solid #F4F4FD;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
